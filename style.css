@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: pink;
+    flex-direction: column;
+}
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#search-container{
+    padding: 2rem 0 0;
+    margin: 0 0 2rem;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    position: relative;
+}
+#search-container label{
+    padding: 1rem 0 .3rem;
+    font-size: 1.3rem;
+}
+#search-container input{
+    padding: .4rem .2rem .3rem;
+    border: 1px solid pink;
+    background-color: transparent;
+    color: pink;
+    font-size: 1.3rem;
+    min-width: 350px;
+}
+#show-container{
+    position: absolute;
+    top: 100%;
+    background-color: rgb(46, 7, 7);
+    width: 28vw;
+    min-width: 350px;
+    box-shadow: 1px 7px 10px rgb(63, 62, 62);
+    display: none;
+}
+.value{
+    padding: .2rem .4rem;
+    font-size: 1.4rem;
+}
+.value:nth-child(even){
+    background-color: rgb(82, 14, 14);
+}
+.value:nth-child(odd){
+    background-color: rgb(13, 3, 29);
+}
+#items{
+    border: 1px solid pink;
+    width: 30vw;
+    min-width: 350px;
+}
+.items{
+    padding: .3rem .3rem;
+
+}
+.items::before{
+    content: "*";
+    padding: .1rem;
+}
+.red{
+    background-color: yellow;
+    color: red;
+}
+#display{
+    border: 1px solid pink;
+    margin: 1rem 0 0;
+    padding: .2rem;
+    width: 30vw;
+    min-width: 350px;
+    font-size: 2rem;
+}
+#btn{
+    border: 1px solid pink;
+    padding: .4rem 2rem;
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: pink;
+    color: black;
+}
